@@ -610,19 +610,6 @@
           uid: az_cosmosdb_sql_restorable-resource
           displayName: az cosmosdb sql restorable-resource
           items: []
-        - name: role
-          items:
-          - name: Summary
-            uid: az_cosmosdb_sql_role
-            displayName: az cosmosdb sql role
-          - name: assignment
-            uid: az_cosmosdb_sql_role_assignment
-            displayName: az cosmosdb sql role assignment
-            items: []
-          - name: definition
-            uid: az_cosmosdb_sql_role_definition
-            displayName: az cosmosdb sql role definition
-            items: []
     - name: managed-cassandra
       items:
       - name: Summary
@@ -860,10 +847,6 @@
           uid: az_dms_project_task
           displayName: az dms project task
           items: []
-      - name: task
-        uid: az_dms_task
-        displayName: az dms task
-        items: []
   - name: Azure Data Share
     items:
     - name: Summary
@@ -956,6 +939,25 @@
         uid: az_postgres_flexible-server
         displayName: az postgres flexible-server
         items: []
+  - name: Azure Database Migration Service
+    items:
+    - name: Summary
+      uid: sp-Azure_Database_Migration_Service
+      displayName: Azure Database Migration Service
+    - name: dms
+      items:
+      - name: Summary
+        uid: az_dms
+        displayName: az dms
+      - name: project
+        items:
+        - name: Summary
+          uid: az_dms_project
+          displayName: az dms project
+        - name: task
+          uid: az_dms_project_task
+          displayName: az dms project task
+          items: []
   - name: Azure Databox
     items:
     - name: Summary
@@ -1148,6 +1150,20 @@
           uid: az_dt_twin_telemetry
           displayName: az dt twin telemetry
           items: []
+  - name: Azure Disk Pool Service
+    items:
+    - name: Summary
+      uid: sp-Azure_Disk_Pool_Service
+      displayName: Azure Disk Pool Service
+    - name: disk-pool
+      items:
+      - name: Summary
+        uid: az_disk-pool
+        displayName: az disk-pool
+      - name: iscsi-target
+        uid: az_disk-pool_iscsi-target
+        displayName: az disk-pool iscsi-target
+        items: []
   - name: Azure Disk Storage
     items:
     - name: Summary
@@ -1878,68 +1894,21 @@
         uid: az_ml_compute
         displayName: az ml compute
         items: []
-      - name: computetarget
-        items:
-        - name: Summary
-          uid: az_ml_computetarget
-          displayName: az ml computetarget
-        - name: amlcompute
-          items:
-          - name: Summary
-            uid: az_ml_computetarget_amlcompute
-            displayName: az ml computetarget amlcompute
-          - name: identity
-            uid: az_ml_computetarget_amlcompute_identity
-            displayName: az ml computetarget amlcompute identity
-            items: []
-        - name: attach
-          uid: az_ml_computetarget_attach
-          displayName: az ml computetarget attach
-          items: []
-        - name: computeinstance
-          uid: az_ml_computetarget_computeinstance
-          displayName: az ml computetarget computeinstance
-          items: []
-        - name: create
-          uid: az_ml_computetarget_create
-          displayName: az ml computetarget create
-          items: []
-        - name: update
-          uid: az_ml_computetarget_update
-          displayName: az ml computetarget update
-          items: []
       - name: data
         uid: az_ml_data
         displayName: az ml data
-        items: []
-      - name: dataset
-        uid: az_ml_dataset
-        displayName: az ml dataset
         items: []
       - name: datastore
         uid: az_ml_datastore
         displayName: az ml datastore
         items: []
       - name: endpoint
-        items:
-        - name: Summary
-          uid: az_ml_endpoint
-          displayName: az ml endpoint
-        - name: realtime
-          uid: az_ml_endpoint_realtime
-          displayName: az ml endpoint realtime
-          items: []
+        uid: az_ml_endpoint
+        displayName: az ml endpoint
+        items: []
       - name: environment
         uid: az_ml_environment
         displayName: az ml environment
-        items: []
-      - name: experiment
-        uid: az_ml_experiment
-        displayName: az ml experiment
-        items: []
-      - name: folder
-        uid: az_ml_folder
-        displayName: az ml folder
         items: []
       - name: job
         uid: az_ml_job
@@ -1949,25 +1918,97 @@
         uid: az_ml_model
         displayName: az ml model
         items: []
+      - name: workspace
+        uid: az_ml_workspace
+        displayName: az ml workspace
+        items: []
+    - name: ml(v1)
+      items:
+      - name: Summary
+        uid: az_ml(v1)
+        displayName: az ml
+      - name: computetarget
+        items:
+        - name: Summary
+          uid: az_ml(v1)_computetarget
+          displayName: az ml computetarget
+        - name: amlcompute
+          items:
+          - name: Summary
+            uid: az_ml(v1)_computetarget_amlcompute
+            displayName: az ml computetarget amlcompute
+          - name: identity
+            uid: az_ml(v1)_computetarget_amlcompute_identity
+            displayName: az ml computetarget amlcompute identity
+            items: []
+        - name: attach
+          uid: az_ml(v1)_computetarget_attach
+          displayName: az ml computetarget attach
+          items: []
+        - name: computeinstance
+          uid: az_ml(v1)_computetarget_computeinstance
+          displayName: az ml computetarget computeinstance
+          items: []
+        - name: create
+          uid: az_ml(v1)_computetarget_create
+          displayName: az ml computetarget create
+          items: []
+        - name: update
+          uid: az_ml(v1)_computetarget_update
+          displayName: az ml computetarget update
+          items: []
+      - name: dataset
+        uid: az_ml(v1)_dataset
+        displayName: az ml dataset
+        items: []
+      - name: datastore
+        uid: az_ml(v1)_datastore
+        displayName: az ml datastore
+        items: []
+      - name: endpoint
+        items:
+        - name: Summary
+          uid: az_ml(v1)_endpoint
+          displayName: az ml endpoint
+        - name: realtime
+          uid: az_ml(v1)_endpoint_realtime
+          displayName: az ml endpoint realtime
+          items: []
+      - name: environment
+        uid: az_ml(v1)_environment
+        displayName: az ml environment
+        items: []
+      - name: experiment
+        uid: az_ml(v1)_experiment
+        displayName: az ml experiment
+        items: []
+      - name: folder
+        uid: az_ml(v1)_folder
+        displayName: az ml folder
+        items: []
+      - name: model
+        uid: az_ml(v1)_model
+        displayName: az ml model
+        items: []
       - name: pipeline
-        uid: az_ml_pipeline
+        uid: az_ml(v1)_pipeline
         displayName: az ml pipeline
         items: []
       - name: run
-        uid: az_ml_run
+        uid: az_ml(v1)_run
         displayName: az ml run
         items: []
       - name: service
-        uid: az_ml_service
+        uid: az_ml(v1)_service
         displayName: az ml service
         items: []
       - name: workspace
         items:
         - name: Summary
-          uid: az_ml_workspace
+          uid: az_ml(v1)_workspace
           displayName: az ml workspace
         - name: private-endpoint
-          uid: az_ml_workspace_private-endpoint
+          uid: az_ml(v1)_workspace_private-endpoint
           displayName: az ml workspace private-endpoint
           items: []
   - name: Azure Managed Applications
@@ -4019,6 +4060,15 @@
           uid: az_storage_file_metadata
           displayName: az storage file metadata
           items: []
+      - name: fs
+        items:
+        - name: Summary
+          uid: az_storage_fs
+          displayName: az storage fs
+        - name: service-properties
+          uid: az_storage_fs_service-properties
+          displayName: az storage fs service-properties
+          items: []
       - name: logging
         uid: az_storage_logging
         displayName: az storage logging
@@ -4834,6 +4884,45 @@
       uid: az_managementpartner
       displayName: az managementpartner
       items: []
+  - name: Microsoft Partner Services
+    items:
+    - name: Summary
+      uid: sp-Microsoft_Partner_Services
+      displayName: Microsoft Partner Services
+    - name: confluent
+      items:
+      - name: Summary
+        uid: az_confluent
+        displayName: az confluent
+      - name: organization
+        uid: az_confluent_organization
+        displayName: az confluent organization
+        items: []
+      - name: terms
+        uid: az_confluent_terms
+        displayName: az confluent terms
+        items: []
+    - name: datadog
+      items:
+      - name: Summary
+        uid: az_datadog
+        displayName: az datadog
+      - name: monitor
+        uid: az_datadog_monitor
+        displayName: az datadog monitor
+        items: []
+      - name: sso-config
+        uid: az_datadog_sso-config
+        displayName: az datadog sso-config
+        items: []
+      - name: tag-rule
+        uid: az_datadog_tag-rule
+        displayName: az datadog tag-rule
+        items: []
+      - name: terms
+        uid: az_datadog_terms
+        displayName: az datadog terms
+        items: []
   - name: Microsoft Windows
     items:
     - name: Summary
@@ -4874,24 +4963,6 @@
       - name: provider-instance
         uid: az_sapmonitor_provider-instance
         displayName: az sapmonitor provider-instance
-        items: []
-  - name: Third-party service in LiftR
-    items:
-    - name: Summary
-      uid: sp-Third-party_service_in_LiftR
-      displayName: Third-party service in LiftR
-    - name: confluent
-      items:
-      - name: Summary
-        uid: az_confluent
-        displayName: az confluent
-      - name: organization
-        uid: az_confluent_organization
-        displayName: az confluent organization
-        items: []
-      - name: terms
-        uid: az_confluent_terms
-        displayName: az confluent terms
         items: []
   - name: Visual Studio
     items:

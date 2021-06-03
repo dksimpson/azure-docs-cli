@@ -40,6 +40,7 @@ commands:
 - az_databox
 - az_databoxedge
 - az_databricks
+- az_datadog
 - az_datafactory
 - az_datashare
 - az_dedicated-hsm
@@ -51,6 +52,7 @@ commands:
 - az_disk
 - az_disk-access
 - az_disk-encryption-set
+- az_disk-pool
 - az_dms
 - az_dt
 - az_eventgrid
@@ -86,6 +88,7 @@ commands:
 - az_managed-cassandra
 - az_managementpartner
 - az_mesh
+- az_ml(v1)
 - az_ml
 - az_monitor
 - az_mysql

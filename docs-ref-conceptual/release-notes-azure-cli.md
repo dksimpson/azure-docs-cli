@@ -4,7 +4,7 @@ description: Learn about the latest updates to Azure CLI
 author: dbradish-microsoft
 ms.author: dbradish
 manager: barbkess
-ms.date: 05/25/2021
+ms.date: 06/02/2021
 ms.topic: article
 ms.service: azure-cli
 ms.devlang: azurecli
@@ -14,6 +14,31 @@ ms.custom: devx-track-azurecli
 # Azure CLI release notes
 
 # [Current release notes](#tab/azure-cli)
+
+## June 02, 2021
+
+Version 2.24.2
+
+### Container
+
+* Hotfix: Fix #18276: `az container create` fails with `AttributeError: 'ResourcesOperations' object has no attribute 'create_or_update'`
+
+## June 01, 2021
+
+Version 2.24.1
+
+### App Service
+
+* Hotfix: Fix #18266 - webapp config appsettings set command causing all values to default to "false"
+
+### ARM
+* Hotfix: Fix deserialization issue in the What-If formatter of ARM template
+
+### Compute
+* Hotfix: Fix the bad request issue when creating VMSS in Azure Stack
+
+### IoT
+* Hotfix: Fix issue for removing last user-assigned identity from IoT Hub
 
 ## May 25, 2021
 
